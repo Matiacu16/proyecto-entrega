@@ -1,0 +1,421 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*INDEX*/
+#WEB1{
+    color: rgb(192, 183, 183);
+}
+.nav-bar{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    align-items: center;
+}
+.navbar-brand{
+    animation-name: rotar_logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+@keyframes rotar_logo {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.nav-bar .imag-logo{
+    border-radius: 20px;
+    width: 95px;
+    grid-column: 1/2;
+}
+ul{
+    list-style-type: none;
+}
+.nav-bar .encabezado{
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: azure;
+    text-align:right;
+}
+
+.nav-bar .Menu{
+    display: flex;
+    grid-column: 3/8;
+    justify-content: space-around;
+}
+.nav-bar .Menu a{
+    font-family: monospace;
+    font-size: 15px;
+    color:crimson
+}
+.nav-bar .menu-bar{
+    display: none;
+}
+.nav-bar .shop{
+    grid-column: 9/10;
+}
+.shop{
+    animation-name: shop;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+@keyframes shop {
+    0%{
+        transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
+.main-index{
+    height: 60vh;
+    background-color:gainsboro;
+    background-position: center;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.footer-index{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-color: gainsboro;
+}
+.footer-index .encabezado-3{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    font-size: 20px;
+}
+.footer-index .gmail a{
+    color:black;
+}
+.footer-index .gmail{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: center;
+}
+.footer-index .P-sport{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: black;
+    text-align: center;
+}
+.footer-index .siguenos{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    color: crimson;
+}
+.footer-index .redes-sociales{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    display: flex;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+.main-index .article{
+    grid-column: 3/7;
+    grid-row: 4/7;
+    color:azure;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif
+}
+.main-index .encabezado-2{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    text-align:right;
+}
+.main-index .link-tienda{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.encabezado-siguenos{
+    animation-name: animate__heartBeat;
+    animation-duration: 3s;
+}
+.redes-sociales:hover{
+    transform:translate(-3px);
+}
+.Menu:hover{
+    transform: translate(-1px);
+}
+/*CONTACTOS*/
+.paracontactos{
+    color: seagreen;
+    font-size: 28px;
+}
+.ppp{
+    color: crimson;
+}
+
+/*TIENDA*/
+.tienda{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    color: crimson;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.main-tienda{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+.tienda-h1{
+    color: black;
+}
+.tienda .tienda-h1{
+    grid-column: 3/4;
+}
+
+.main-tienda .tienda-baja{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-tienda .tienda-media{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    color:dodgerblue;
+}
+.main-tienda .tienda-items{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    color:dodgerblue;
+    text-align: center;
+}
+.main-tienda .tienda-indumentaria{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    color:dodgerblue;
+}
+.tienda-pag{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.tienda-pag a{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tienda-intermedio{display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.tienda-intermedio .tienda-novedades{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: crimson;
+    font-size: 24px;
+}
+.tienda-intermedio .tienda-footer{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align:center
+}
+.tienda-intermedio .imagen-novedades{
+    border-radius: 20px;
+    grid-column: 4/6;
+    grid-row: 1/2;
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+.imagen-novedades{
+    animation-name: imagen-novedades;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+@keyframes imagen-novedades {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+/*CALZADO*/
+.calzado{
+    color: crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    font-size: 24px;
+}
+.grid-calzado{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    
+}
+.grid-calzado div{
+    border: 0;
+    color:dodgerblue
+}
+.flex-calzado{
+    display: flex;
+    padding: 2px;
+    height: 20vw;
+    justify-items: end;
+    column-gap: 20px;
+}
+.flex-calzado2{
+    display: flex;
+    padding: 2px;
+    height: 238px;
+    justify-items: end;
+    column-gap: 20px;
+}
+/*INDUMENTARIA*/
+.item{
+    height: 150px;
+}
+/*HEADER MEDIA*/
+@media screen and (max-width: 600px) {
+    .nav-bar .shop{
+        display: none;
+    }
+    .nav-bar .menu-bar{
+        display: block;
+        grid-column: 9/10;
+        font-size: 30px;
+        cursor: pointer;
+        text-align:start;
+    }
+    .nav-bar .Menu{
+        display: none;
+    }
+    .nav-bar .encabezado{
+        grid-column: 6/8;
+        font-size: 24px;
+        text-align:right;
+    }
+    
+    /*MAIN MEDIA*/
+    
+    .main-index .encabezado-2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 20px;
+        text-align:right;
+    }
+    .main-index .article{
+        grid-row: 2/7;
+        font-size: 17px;
+    }
+    .main-index .link-tienda{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    /*MAIN FOOTER*/
+    
+    .footer-index .P-sport{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .footer-index .gmail{
+        display: flex;
+        align-items: flex-end;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        text-align:center;
+    }
+    .footer-index .redes-sociales{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        justify-content:space-around;
+    }
+    .footer-index .siguenos{
+        grid-column: 2/4;
+        grid-row: 3/4;
+        align-items: center;
+    }
+    
+    /*TIENDA*/
+    .main-tienda .tienda-baja{
+        display: flex;
+        align-items:flex-end;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .main-tienda .tienda-media{
+        display: flex;
+        align-items:flex-end;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        justify-content:right;
+    }
+    .main-tienda .tienda-items{
+        display: flex;
+        align-items:flex-end;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-content: space-around;
+    }
+    .main-tienda .tienda-indumentaria{
+        display: flex;
+        align-items:flex-end;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        justify-content: space-around;
+    }
+    /*TIENDA INTERMEDIO*/
+    .tienda-intermedio .imagen-novedades{
+        border-radius: 20px;
+        grid-column: 3/5;
+        grid-row: 1/2;
+        height: auto;
+        width: auto;
+        max-width: 210px;
+        max-height: 250px;
+    }
+    .tienda-intermedio .tienda-novedades{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: 24px;
+    }
+    .tienda-intermedio .tienda-footer{
+        grid-column: 3/6;
+        grid-row: 2/3;
+        font-size: 17px;
+        text-align:center
+    }
+}
