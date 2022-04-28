@@ -1,0 +1,22 @@
+.div_cards{
+    margin: 80px auto;
+    max-width: 960px;
+    text-align: center;
+}
+.card__image{
+    display: inline-block;
+    margin: 8px;
+    max-width: 300px;
+    perspective: 1000;
+    position: relative;
+    text-align: left;
+    transition: all 0.3s 0s ease-in;
+    width: 300px;
+    z-index: 1;
+}
+.flex-calzado{
+    @extend .div_cards;
+}
+.expo_calzado{
+    @extend .card__image;
+}
