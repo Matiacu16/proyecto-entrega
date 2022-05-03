@@ -120,7 +120,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-color: black;
+  background-color: rgb(34, 34, 34);
 }
 .footer-index .encabezado-3 {
   grid-column: 1/3;

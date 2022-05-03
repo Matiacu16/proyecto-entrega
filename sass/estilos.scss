@@ -96,7 +96,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
-    background-color:black;
+    background-color:rgba(34,34,34,1);
 
 .encabezado-3{
     grid-column: 1/3;
