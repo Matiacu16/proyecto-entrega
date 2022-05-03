@@ -119,8 +119,8 @@ ul {
 .footer-index {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  background-color: gainsboro;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: black;
 }
 .footer-index .encabezado-3 {
   grid-column: 1/3;
@@ -130,17 +130,17 @@ ul {
   font-size: 20px;
 }
 .footer-index .gmail a {
-  color: black;
+  color: azure;
 }
 .footer-index .gmail {
   grid-column: 1/2;
-  grid-row: 4/5;
+  grid-row: 3/4;
   text-align: center;
 }
 .footer-index .P-sport {
   grid-column: 1/2;
-  grid-row: 3/4;
-  color: black;
+  grid-row: 2/3;
+  color: crimson;
   text-align: center;
 }
 .footer-index .siguenos {
@@ -152,7 +152,7 @@ ul {
   grid-column: 4/5;
   grid-row: 3/4;
   display: flex;
-  color: black;
+  color: azure;
   text-align: center;
   font-size: 20px;
   justify-content: space-evenly;
@@ -160,7 +160,7 @@ ul {
 
 .main-index {
   height: 60vh;
-  background-color: gainsboro;
+  background-color: white;
   background-position: center;
   max-width: 100%;
   display: grid;
