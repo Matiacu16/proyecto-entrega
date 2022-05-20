@@ -81,60 +81,6 @@ ul{
     animation-duration: 3s;
     animation-delay: 2s;
 }
-@keyframes shop {
-    0%{
-        transform: rotateX(0deg);
-    }
-    50%{
-        transform: rotateX(180deg);
-    }
-    100%{
-        transform: rotateX(360deg);
-    }
-}
-.footer-index{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-    background-color:rgba(34,34,34,1);
-
-.encabezado-3{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: crimson;
-    font-size: 20px;
-    }
-
-.gmail a{
-    color:azure;
-    }
-.gmail{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    text-align: center;
-    }
-.P-sport{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    color:crimson;
-    text-align: center;
-    }
-.siguenos{
-    grid-column: 4/5;
-    grid-row: 1/2;
-    color: crimson;
-    }
-.redes-sociales{
-    grid-column: 4/5;
-    grid-row: 3/4;
-    display: flex;
-    color:azure;
-    text-align: center;
-    font-size: 20px;
-    justify-content: space-evenly;
-    }
-}
 .main-index{
     height: 60vh;
     background-color:white;
@@ -360,33 +306,6 @@ ul{
         grid-column: 1/2;
         grid-row: 2/3;
     }
-    /*MAIN FOOTER*/
-    
-    .footer-index .P-sport{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        text-align: center;
-    }
-    .footer-index .gmail{
-        display: flex;
-        align-items: flex-end;
-        grid-column: 1/2;
-        grid-row: 2/3;
-        text-align:center;
-    }
-    .footer-index .redes-sociales{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        align-items: center;
-        display: flex;
-        font-size: 20px;
-        justify-content:space-around;
-    }
-    .footer-index .siguenos{
-        grid-column: 2/4;
-        grid-row: 3/4;
-        align-items: center;
-    }
     
     /*TIENDA*/
     .main-tienda .tienda-baja{
@@ -436,5 +355,18 @@ ul{
         grid-row: 2/3;
         font-size: 17px;
         text-align:center
+    }
+    /*indumentaria*/
+    .remeras_pantalones{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-items:center;
+    }
+    /*grid calzado*/
+    .grid-calzado{
+        display: grid;
+        grid-template-columns: repeat(3,200px);
+        justify-items: center;
+        font-size: 18px;
     }
 }
